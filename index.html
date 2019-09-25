@@ -1,0 +1,23 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB安全编程实践</title>
+</head>
+<body> 
+
+<h2>SQL注入</h2>
+<form method="post" action="login.php"> 
+   用户名: <input type="text" placeholder="用户名" name="name">
+   <br><br>
+   密&nbsp&nbsp&nbsp码: <input type="password" placeholder="密码" name="password">
+   <br><br>
+   <input type="text" placeholder="验证码" name="verifycode" class="captcha"><br><br>
+   <img id="captcha_img" src="captcha.php?r=<?php echo rand();?>" alt="验证码">
+   <label><a href="javascript:void(0)"" onclick="document.getElementById('captcha_img').src='captcha.php?r='+Math.random()">换一个</a></label><br>
+   <input type="submit" name="submit" value="登录">
+   <input type="button" name="submit" value="注册" onclick="location.href='http://localhost/web/register.html'"> 
+</form>
+<a href='http://localhost/web/xss.html'><h2>XSS</h2></a>
+<a href='http://localhost/web/upload.html'><h2>文件上传</h2></a>
+</body>

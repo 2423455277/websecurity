@@ -1,0 +1,32 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB安全编程实践</title>
+</head>
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB安全编程实践</title>
+</head>
+<div class="body_padded">
+	<h1>XSS</h1>
+
+	<div class="vulnerable_code_area">
+		<form name="XSS" action="xss1.php" method="GET">
+			<p>
+				What's your name?
+				<input type="text" name="name">
+				<input type="submit" value="submit">
+			</p>
+		</form>
+		<form name="XSS" action="xss2.php" method="GET">
+			<p>
+				What's your name?
+				<input type="text" name="name">
+				<input type="submit" value="submit">
+			</p>
+		</form>
+	</div>
+</div>

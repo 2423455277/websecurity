@@ -1,0 +1,31 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB安全编程实践</title>
+</head>
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB安全编程实践</title>
+</head>
+<div class="body_padded">
+	<h1>CSRF</h1>
+
+	<div class="vulnerable_code_area">
+		<h3>修改账户密码</h3>
+		<form action="csrf2.php" method="post">
+			当前旧密码：
+			<input type="password" AUTOCOMPLETE="off" name="password">
+			<br>
+			新&nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;码：
+			<input type="password" AUTOCOMPLETE="off" name="password_new">
+			<br>
+			确认新密码：
+			<input type="password" AUTOCOMPLETE="off" name="password_conf">
+			<br><br>
+			<input type="submit" value="提交" name="Change">
+		</form>
+	</div>
+</div>
